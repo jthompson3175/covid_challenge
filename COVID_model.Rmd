@@ -79,6 +79,8 @@ a + theme(legend.position = "none")
 
 ## Time series forecasting
 
+I have no idea what this is doing:
+
 ```{r}
 diffed = diff(spain_cases$cases, differences = 1)
 head(diffed)
@@ -197,6 +199,8 @@ for(i in 1:L){
      predictions[i] <- yhat
 }
 ```
+
+Need to add the times back in for the predicted values:
 
 ```{r}
 # predictions are for observations 65 through the end, same as the testing dataset.
